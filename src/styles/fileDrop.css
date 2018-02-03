@@ -1,0 +1,146 @@
+.DropZone {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vh;
+  height: 80vh;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+  background: linear-gradient(to left, #3e4249 50%, #276F8B 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  overflow: hidden;
+  border: 2px solid white;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.DropZone>p {
+  position: absolute;
+  left: 5%;
+  color: white;
+  width: 45%;
+  text-decoration: none;
+}
+
+.DropZoneOverlay {
+  background-color: rgb(221, 86, 56);
+  height: inherit;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  border-left: 2px solid white;
+  z-index: 1000;
+
+}
+
+.DropZoneOverlay:visited {
+  width: 101%;
+}
+
+.ButtonContainer>.StandardButton2 {
+  opacity: 0;
+  background: rgb(221, 86, 56);
+  color: white;
+  padding: .2vw;
+  height: 5vh;
+  width: 10vh;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  transition: .2s;
+  text-decoration: none;
+}
+
+.FileList {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 60%;
+  width: 95%;
+  /*margin: 3%;*/
+  border: 1px solid white;
+  overflow-y: auto;
+  z-index: 1000;
+  display: flex;
+  opacity: 0;
+}
+.FileList > div{
+  flex: 1;
+  max-width: 100%;
+  margin: 3%;
+
+}
+
+#root > div > div > .StandardButton {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.DropZoneOverlay>a {
+  color: white;
+  text-decoration: none;
+}
+
+.LoadingBar {
+  position: absolute;
+  color: transparent;
+  z-index: 0;
+}
+
+.Uploading {
+  position: absolute;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.StandardButton2 {
+  background: rgb(221, 86, 56);
+  color: white;
+  border: 2px solid transparent;
+  transition: .2s;
+  height: 10vh;
+  width: 20vh;
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 0px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.StandardButton2:hover {
+  border: 2px white solid;
+  text-decoration: none;
+  color: white;
+}
+
+.Next {
+  background: black;
+  color: lightgrey;
+  opacity: .5;
+  text-decoration: none;
+}
+
+.Next:hover {
+  border: 2px transparent solid;
+  text-decoration: none;
+  color: lightgrey;
+  cursor: default;
+}
+
+.ButtonContainer {
+  display: flex;
+  z-Index: 100;
+}

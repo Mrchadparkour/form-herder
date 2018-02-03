@@ -1,0 +1,14 @@
+.ThankYou {
+  opacity: 0;
+  display: none;
+}
+
+ .Container > a {
+  background: rgb(221, 86, 56);
+  color: white;
+  padding: .5vw;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  transition: .2s;
+  text-decoration: none;
+}

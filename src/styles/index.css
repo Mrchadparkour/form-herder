@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+html {
+margin: 5vh;
+overflow: auto;
+background-image: url("./tile.jpg");
+background-repeat: repeat;
+background-size: cover;
+}
+body, #root {
+  font-family: 'Raleway', sans-serif;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0;
+}
+
+.StandardButton {
+  background: rgb(221, 86, 56);
+  color: white;
+  padding: .5vw;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  transition: .2s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.StandardButton:hover {
+  color: white;
+  border: 2px white solid;
+  text-decoration: none;
+  background: rgb(221, 86, 56);
+  cursor: pointer;
+}
+
+.StandardButton:visited, .StandardButton:active {
+  color: white;
+  text-decoration: none;
+  text-decoration-line: none;
+  cursor: pointer;
+}
